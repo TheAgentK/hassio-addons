@@ -1,7 +1,7 @@
 {
   "slug": "googlewifi_dashboard",
   "name": "Google Wifi Dashbaord",
-  "version": "0.0.1-beta1",
+  "version": "0.0.1-beta2",
   "url": "https://github.com/TheAgentK/hassio-addons",
   "stage": "stable",
   "description": "Google Wifi Dashbaord based of https://github.com/JamesHawkinss/google-wifi-dashboard . Built by TheAgentK",
@@ -9,10 +9,10 @@
   "startup": "services",
   "boot": "auto",
   "ports": {
-    "8080/tcp": 8080
+    "8000/tcp": 8000
   },
   "ports_description": {
-    "8080/tcp": "Dasbaord UI"
+    "8000/tcp": "Dasbaord UI"
   },
   "map": [],
   "options": {
