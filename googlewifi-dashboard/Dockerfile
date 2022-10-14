@@ -12,7 +12,7 @@ git
 RUN git clone https://github.com/JamesHawkinss/google-wifi-dashboard
 RUN cd /google-wifi-dashboard && npm install --unsafe-perm
 
-COPY run.sh /google-wifi-dashboar
-RUN chmod a+x /google-wifi-dashboar/run.sh
+COPY run.sh /
+RUN chmod a+x /run.sh
 
-CMD [ "/google-wifi-dashboar/run.sh" ]
+CMD [ "/run.sh" ]
