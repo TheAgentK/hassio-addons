@@ -2,15 +2,16 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 # Install requirements for add-on
+
 RUN apk add --no-cache \
-  nodejs \
-  npm \
-  git
+ nodejs \
+ npm \
+ git
 
 WORKDIR /data
 
-RUN git clone https://github.com/JamesHawkinss/google-wifi-dashboard .
-RUN npm install
+RUN git clone https://github.com/JamesHawkinss/google-wifi-dashboard.git .
+RUN npm install --unsafe-perm
 
 COPY run.sh /
 RUN chmod a+x /run.sh

@@ -1,7 +1,7 @@
 {
   "slug": "googlewifi_dashboard",
   "name": "Google Wifi Dashbaord",
-  "version": "0.0.1-beta3",
+  "version": "0.0.1-beta4",
   "url": "https://github.com/TheAgentK/hassio-addons",
   "stage": "stable",
   "description": "Google Wifi Dashbaord based of https://github.com/JamesHawkinss/google-wifi-dashboard . Built by TheAgentK",
