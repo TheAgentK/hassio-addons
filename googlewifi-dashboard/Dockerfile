@@ -8,8 +8,6 @@ RUN apk add --no-cache \
  npm \
  git
 
-WORKDIR /data
-
 RUN git clone https://github.com/JamesHawkinss/google-wifi-dashboard.git
 RUN cd google-wifi-dashboard && npm install --unsafe-perm
 
