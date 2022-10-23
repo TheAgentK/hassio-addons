@@ -1,0 +1,17 @@
+name: "Google Wifi"
+description: "Google Wifi Dashbaord"
+version: "dev"
+slug: "googlewifi"
+init: false
+ingress: true
+ingress_port: 8099
+options:
+  refresh_token: "This library requires a refresh token, which can be obtained here: https://www.angelod.com/onhubauthtool/"
+schema:
+  refresh_token: "str"
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
