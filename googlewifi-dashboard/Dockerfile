@@ -4,6 +4,7 @@ FROM $BUILD_FROM
 #Add nginx and create the run folder for nginx.
 RUN \
   apk --update --no-cache add \
+    git \
     nodejs \
     npm \
     nginx \
@@ -11,8 +12,8 @@ RUN \
   && mkdir -p /run/nginx
 
 # Copy application to /tmp
-COPY dashboard /tmp/dashboard
-RUN cd /tmp/dashboard && npm install --unsafe-perm
+RUN cd /tmp && git clone https://github.com/TheAgentK/google-wifi-dashboard
+RUN cd /tmp/google-wifi-dashboard && npm install --unsafe-perm
 
 # Copy our conf into the nginx http.d folder.
 COPY ingress.conf /etc/nginx/http.d/
