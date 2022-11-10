@@ -13,7 +13,7 @@ RUN \
 
 # Copy application to /tmp
 RUN cd /tmp && git clone https://github.com/TheAgentK/google-wifi-dashboard
-RUN cd /tmp/google-wifi-dashboard && npm install --unsafe-perm
+RUN cd /tmp/google-wifi-dashboard && rm package-lock.json && npm install --unsafe-perm
 
 # Copy our conf into the nginx http.d folder.
 COPY ingress.conf /etc/nginx/http.d/

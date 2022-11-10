@@ -1,7 +1,8 @@
 name: "Google Wifi"
 description: "Google Wifi Dashbaord"
-version: "dev"
-slug: "googlewifi"
+version: "1.0.0"
+slug: "googlewifi-dashboard"
+url: https://github.com/TheAgentK/hassio-addons/tree/master/googlewifi-dashboard
 init: false
 ingress: true
 ingress_port: 8099
